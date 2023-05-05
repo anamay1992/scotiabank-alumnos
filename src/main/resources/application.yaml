@@ -1,0 +1,15 @@
+server:
+  port: 8001
+spring:
+  web:
+    resources:
+      static-path-pattern: /static/**
+  webflux:
+    base-path: /scotiabank
+  r2dbc:
+    url: r2dbc:mysql://localhost:3306/alumnos
+    username: root
+    password: root
+    pool:
+      enable: true
+      max-size: 10
